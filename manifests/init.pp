@@ -7,7 +7,7 @@
 # @example rabbitmq class
 #   class { 'rabbitmq':
 #     service_manage    => false,
-#     port              => '5672',
+#     port              => 5672,
 #     delete_guest_user => true,
 #   }
 #
@@ -24,7 +24,7 @@
 #
 # @example To use RabbitMQ Environment Variables, use the parameters `environment_variables` e.g.:
 #   class { 'rabbitmq':
-#     port                  => '5672',
+#     port                  => 5672,
 #     environment_variables => {
 #       'NODENAME'    => 'node01',
 #       'SERVICENAME' => 'RabbitMQ'
@@ -33,7 +33,7 @@
 #
 # @example Change RabbitMQ Config Variables in rabbitmq.config:
 #   class { 'rabbitmq':
-#     port             => '5672',
+#     port             => 5672,
 #     config_variables => {
 #       'hipe_compile' => true,
 #       'frame_max'    => 131072,
@@ -43,7 +43,7 @@
 #
 # @example Change Erlang Kernel Config Variables in rabbitmq.config
 #   class { 'rabbitmq':
-#     port                    => '5672',
+#     port                    => 5672,
 #     config_kernel_variables => {
 #       'inet_dist_listen_min' => 9100,
 #       'inet_dist_listen_max' => 9105,
